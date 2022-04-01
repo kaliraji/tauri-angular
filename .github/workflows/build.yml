@@ -2,10 +2,10 @@ name: Publish Beta
 
 on:
   push:
-    branches:    
-      - 'master'
+    tags:
+      - '*'
   release:
-    types: [prereleased]
+    types: [created]
 
 jobs:
   build:
